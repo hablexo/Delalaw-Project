@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: rgb(181, 174, 165);
+}
+.main-body {
+  display: flex;
+  margin-top: 60px;
+  
+}
+.header-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  background-color: rgb(204, 117, 186);
+  z-index: 10;
+}
+
+.header-content div a {
+  text-decoration: none;
+  font-size:26px;
+  color: rgb(255, 255, 255);
+}
+.header-content div a:hover {
+  color: rgb(229, 208, 208);
+}
+.header-content div a:active {
+  color: gold;
+}
+
+.logo-address {
+  display: flex;
+   flex-direction: row;
+   margin: 90px 40px 0px;
+   justify-content: space-evenly;
+   background-color: rgb(96, 97, 98);
+   padding: 30px 25px;
+   border-radius: 10px;
+}
+.logo-address:hover{
+  background-color: rgb(130, 126, 121);
+}
+.company-logo img {
+  width: 300px;
+  height: auto;
+}
+.addresses {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 15px;
+  border: 1px solid royalblue;
+  border-radius: 6px;
+  padding: 20px 35px;
+  background-color: rgb(141, 134, 127);
+  box-shadow: inset;
+}
+.addresses div {
+  border-bottom: 1px solid rgb(62, 110, 255);
+}
+.addresses div a {
+  text-decoration: none;
+  color: rgb(0, 55, 255);
+}
+.addresses div h4 {
+  padding-bottom: 8px;
+}
+.addresses:hover {
+ background-color: rgb(130, 126, 121);
+}
+.page-content {
+  margin: 100px 40px 0;
+  background-color: rgb(159, 159, 182);
+  display: block;
+  height: 200px;
+  border-radius: 10px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 30px;
+}
+.interface {
+  position: relative;
+  cursor: pointer;
+}
+.interface img{
+  width: 100%;
+}
+.discription {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 1px solid goldenrod;
+  background-color: blueviolet;
+  visibility: hidden;
+
+}
+.popelement {
+visibility: visible;
+transform: scale(1);
+}
+.discription div h4 {
+  margin-bottom: 10px;
+}
+.discription div {
+  border-right: 1px solid rgb(136, 127, 146);
+  padding: 10px 20px;
+}
+.discription div:last-child {
+  border-right: none;
+}
+.sidebar{
+  margin: 20px 20px 0px 10px;
+  min-width: 240px;
+  height: 600px;
+  background-color: rgb(180, 197, 197);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar .heading {
+  padding: 45px 10px 35px;
+  font-size: 38px;
+}
+.sidebar .choice .choices a {
+  text-decoration: none;
+  color: rgb(10, 2, 255);;
+}
+.sidebar .choice ul {
+  list-style: none;
+}
+.choices li {
+  padding-top: 10px;
+  font-size: 22px;
+}
+.sidebar .choice .choices a:hover {
+  color:rgb(1, 37, 60);
+}
+.sidebar .choice .choices a:active {
+  color: rgb(220, 216, 5);
+}
+.footer-section {
+  margin: 140px 10px 5px;
+  background-color: blueviolet;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.footer-section div {
+  cursor: pointer;
+}
+.footer-section div:hover {
+  color: blue;
+}
+@media(min-width: 810px){
+  .for-largscreen{
+    display: flex;
+    flex-direction: row;
+  }
+}

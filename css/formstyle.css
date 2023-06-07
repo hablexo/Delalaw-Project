@@ -1,0 +1,73 @@
+* {
+ border-radius: border-box;
+}
+body {
+  background-color: rgb(115, 93, 136);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container{ 
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+}
+.practice h2 {
+  font-size: 30px;
+}
+.info {
+  margin-bottom: 30px;
+  position: relative;
+}
+.info label {
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0;
+}
+.info input {
+  border: 1px solid rgb(200, 158, 242) ;
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 10px;
+}
+.fas {
+  position: absolute;
+  top: 42px;
+  right: 10px;
+  visibility: hidden;
+}
+small {
+font-size: 16px;
+visibility: hidden;
+}
+.submitbutton {
+  background-color: blue;
+  color: white;
+  padding: 7px 10px;
+  border: 0.7px solid rgb(200, 158, 242) ;
+  border-radius: 4px;
+  width: 100%;
+}
+.info.success input {
+  border-color: rgb(83, 193, 83);
+}
+.info.error input {
+  border-color: rgb(233, 41, 41);
+}
+.info.error i.fas.fa-exclamation-circle{
+  color: rgb(233, 41, 41);
+  visibility: visible;
+}
+.info.success i.fas.fa-check-circle{
+  color: rgb(83, 193, 83);
+  visibility: visible;
+}
+.info.error  small{
+  color:rgb(233, 41, 41);
+   visibility: visible;
+ }
